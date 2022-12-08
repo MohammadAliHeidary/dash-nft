@@ -36,8 +36,7 @@ const Menu = () => {
     ]);
 
     const changeTab = (id: string) => {
-        let newListMenu = [...listMenu];
-        newListMenu = newListMenu.map((item) => {
+        let newListMenu = listMenu.map((item) => {
             return {
                 ...item,
                 activeTab: item.id === id,
@@ -54,6 +53,7 @@ const Menu = () => {
                         activeTab ? "text-indigo-700 font-bold" : ""
                     }`}
                     onClick={() => changeTab(id)}
+                    key={id}
                 >
                     <SVG
                         src={`/src/assets/images/icons/${icon}.svg`}

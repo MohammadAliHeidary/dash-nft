@@ -12,7 +12,7 @@ const DashboardLayout = ({ children }: Props) => {
             <Sidebar />
             <div className="min-h-screen flex flex-col w-full bg-[#fbfbfb]">
                 <Header />
-                <main className="w-full py-6 px-8">{children}</main>
+                <main className="w-full py-6 px-10">{children}</main>
             </div>
         </div>
     );
