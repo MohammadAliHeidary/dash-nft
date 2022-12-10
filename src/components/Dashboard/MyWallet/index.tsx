@@ -1,4 +1,5 @@
 import Card from "./Card";
+import Overview from "./Overview";
 
 const MyWallet = () => {
     return (
@@ -7,8 +8,10 @@ const MyWallet = () => {
             <span className="text-slate-400 font-semibold mb-5">
                 Recommended
             </span>
-
             <Card />
+
+            <h2 className="text-3xl font-bold mt-10">Overview</h2>
+            <Overview />
         </div>
     );
 };
