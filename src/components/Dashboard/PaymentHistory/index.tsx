@@ -6,7 +6,7 @@ const PaymentHistory = () => {
     return (
         <>
             <Title title="Payment History" />
-            <div className="flex flex-col items-start justify-start w-full">
+            <div className="flex flex-col items-start justify-start w-full overflow-x-auto 2xl:overflow-x-visible customScrollbar">
                 <Head />
                 <Rows />
             </div>

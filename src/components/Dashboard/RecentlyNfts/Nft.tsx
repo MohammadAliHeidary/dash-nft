@@ -6,7 +6,7 @@ interface Props {
 
 const Nft = ({icon, type, name}: Props) => {
     return (
-        <div className="flex flex-col items-start justify-start gap-2">
+        <div className="w-full flex flex-col items-start justify-start gap-2">
             <img
                 src={`/src/assets/images/nfts/${icon}.jpg`}
                 alt="nft 1"

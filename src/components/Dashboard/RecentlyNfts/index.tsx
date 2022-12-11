@@ -27,7 +27,7 @@ const RecentlyNfts = () => {
                 tabs={["Recommended", "New Trends", "Multi Colors"]}
             />
 
-            <div className="grid grid-cols-3 grid-rows-1 gap-10 font-semibold w-full">
+            <div className="flex flex-col items-center justify-start md:grid md:grid-cols-3 md:grid-rows-1 gap-10 font-semibold w-full">
                 {nfts.map(({ icon, name, type }, i) => (
                     <Nft icon={icon} name={name} type={type} key={i} />
                 ))}

@@ -2,8 +2,8 @@ import Title from "../../../common/Title";
 
 const Overview = () => {
     return (
-        <div className="w-full flex flex-col items-start justify-start gap-5">
-            <Title title="Overview" />
+        <div className="w-full flex flex-col items-start justify-start gap-5 md:col-start-2 md:col-end-3">
+            <Title title="Overview" tabs={["Recommended"]} />
             <div className="w-full h-72 bg-[#78c9e4] rounded-3xl text-white grid grid-cols-2 grid-rows-1 gap-8 p-8">
                 <div className="text-black flex flex-col items-start justify-between">
                     <div className="flex flex-col items-start justify-start gap-2">
@@ -43,9 +43,9 @@ const Overview = () => {
             <div className="grid grid-cols-2 grid-rows-1 gap-4 w-full">
                 <div className="bg-[#f7f6f6] rounded-3xl flex flex-col items-center justify-center gap-2 px-4 py-6 cursor-pointer transition-all hover:bg-white hover:shadow">
                     <span className="text-xs">BTC Wallet</span>
-                    <span className="font-bold">
+                    <span className="font-bold flex items-center justify-center flex-wrap gap-1">
                         4.434953
-                        <span className="text-slate-400"> BTC</span>
+                        <span className="text-slate-400">BTC</span>
                     </span>
                     <img
                         src="/src/assets/images/currency/btc.png"
@@ -55,9 +55,9 @@ const Overview = () => {
                 </div>
                 <div className="bg-[#f7f6f6] rounded-3xl flex flex-col items-center justify-center gap-2 px-4 py-6 cursor-pointer transition-all hover:bg-white hover:shadow">
                     <span className="text-xs">Etherume Wallet</span>
-                    <span className="font-bold">
+                    <span className="font-bold flex items-center justify-center flex-wrap gap-1">
                         4.434953
-                        <span className="text-slate-400"> ETH</span>
+                        <span className="text-slate-400">ETH</span>
                     </span>
                     <img
                         src="/src/assets/images/currency/ether.png"

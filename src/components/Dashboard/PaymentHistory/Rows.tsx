@@ -21,8 +21,8 @@ const Rows = () => {
     ]);
     return (
         <>
-            {data.map(({ date, description, icon, price, status, title }) => (
-                <div className="grid grid-cols-5 gap-4 w-full p-4 bg-transparent rounded-lg hover:bg-white transition-all relative top-0 right-0 hover:shadow hover:-top-2 hover:-right-2">
+            {data.map(({ date, description, icon, price, status, title }, i) => (
+                <div key={i} className="grid grid-cols-5 gap-4 w-full p-4 bg-transparent rounded-lg hover:bg-white transition-all relative top-0 right-0 hover:shadow hover:-top-2 hover:-right-2 min-w-[800px]">
                     <div className="col-span-2 flex items-center justify-start gap-4">
                         <img
                             src={`/src/assets/images/currency/${icon}.png`}
