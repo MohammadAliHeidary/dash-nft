@@ -49,12 +49,13 @@ const Menu = () => {
         <ul className="my-10 flex flex-col items-start justify-start gap-6 px-5 w-full">
             {listMenu.map(({ icon, text, activeTab, id }) => (
                 <li
-                    className={`flex items-center justify-start gap-5 cursor-pointer w-full hover:bg-slate-100 transition p-2 rounded ${
+                    className={`flex items-center justify-start gap-5 cursor-pointer w-full hover:bg-slate-100 transition p-2 rounded relative ${
                         activeTab ? "text-indigo-700 font-bold" : ""
                     }`}
                     onClick={() => changeTab(id)}
                     key={id}
                 >
+                    {activeTab ? <span className="inline-block w-2 h-2 rounded-full bg-indigo-700 shadow shadow-indigo-700 absolute top-1/2 -left-4 -translate-y-1/2"></span> : null}
                     <SVG
                         src={`/src/assets/images/icons/${icon}.svg`}
                         className={`w-6 h-6 ${

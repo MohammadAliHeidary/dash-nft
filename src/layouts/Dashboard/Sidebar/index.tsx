@@ -3,7 +3,7 @@ import Menu from "./Menu";
 
 const Sidebar = () => {
     return (
-        <nav className="w-96 min-h-screen bg-white border-r border-slate-200 p-6 flex flex-col items-start justify-start">
+        <nav className="w-96 min-h-screen max-h-screen overflow-y-auto customScrollbar bg-white border-r border-slate-200 p-6 flex flex-col items-start justify-start">
             <img
                 src="/src/assets/images/logos/dahsboard.png"
                 alt="logo"

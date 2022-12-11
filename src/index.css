@@ -9,3 +9,21 @@
 * {
     font-family: Poppins;
 }
+
+.customScrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #4338ca #ccc;
+}
+
+.customScrollbar::-webkit-scrollbar-track {
+    background: #ccc;
+}
+
+.customScrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.customScrollbar::-webkit-scrollbar-thumb {
+    background-color: #4338ca;
+    border-radius: 10px;
+}

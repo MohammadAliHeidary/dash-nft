@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Title from "../../../common/Title";
 import Nft from "./Nft";
 
 const RecentlyNfts = () => {
@@ -21,12 +22,10 @@ const RecentlyNfts = () => {
     ]);
     return (
         <div className="flex flex-col items-start justify-start gap-5">
-            <h2 className="text-3xl font-bold">Recently Added NFTs</h2>
-            <div className="flex items-center justify-start gap-14 text-slate-400 mb-5 cursor-pointer font-semibold">
-                <span>Recommended</span>
-                <span>New Trends</span>
-                <span>Multi Colors</span>
-            </div>
+            <Title
+                title="Recently Added NFTs"
+                tabs={["Recommended", "New Trends", "Multi Colors"]}
+            />
 
             <div className="grid grid-cols-3 grid-rows-1 gap-10 font-semibold w-full">
                 {nfts.map(({ icon, name, type }, i) => (
