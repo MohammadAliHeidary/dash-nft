@@ -16,7 +16,7 @@ const Sidebar = ({ showSidebar, changeSidebar }: Props) => {
         >
             <nav
                 onClick={(e) => e.stopPropagation()}
-                className={`h-full relative top-0 w-96 overflow-y-auto customScrollbar bg-white border-x border-slate-200 p-6 flex flex-col items-start justify-start xl:left-0 ${
+                className={`h-full relative top-0 w-72 overflow-y-auto customScrollbar bg-white border-x border-slate-200 p-6 flex flex-col items-start justify-start xl:left-0 ${
                     showSidebar ? "left-0" : "-left-full"
                 } transition-all duration-400`}
             >

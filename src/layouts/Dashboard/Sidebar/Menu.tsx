@@ -55,7 +55,9 @@ const Menu = () => {
                     onClick={() => changeTab(id)}
                     key={id}
                 >
-                    {activeTab ? <span className="inline-block w-2 h-2 rounded-full bg-indigo-700 shadow shadow-indigo-700 absolute top-1/2 -left-4 -translate-y-1/2"></span> : null}
+                    {activeTab ? (
+                        <span className="inline-block w-2 h-2 rounded-full bg-indigo-700 shadow shadow-indigo-700 absolute top-1/2 -left-4 -translate-y-1/2"></span>
+                    ) : null}
                     <SVG
                         src={`/src/assets/images/icons/${icon}.svg`}
                         className={`w-6 h-6 ${

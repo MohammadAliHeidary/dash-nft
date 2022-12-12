@@ -10,7 +10,7 @@ const Title = ({ tabs = [], title }: Props) => {
             {tabs.length ? (
                 <div className="flex flex-wrap items-center justify-start gap-x-14 gap-y-4 text-slate-400 mb-5 cursor-pointer font-semibold">
                     {tabs.map((tab, i) => (
-                        <span key={i}>{tab}</span>
+                        <span key={i} className="hover:text-slate-500">{tab}</span>
                     ))}
                 </div>
             ) : null}

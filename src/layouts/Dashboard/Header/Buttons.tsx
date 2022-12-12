@@ -1,6 +1,6 @@
 const Buttons = () => {
     return (
-        <div className="ml-auto flex items-center justify-start gap-4">
+        <div className="ml-auto flex items-center justify-start gap-4 min-w-fit">
             <div className="bg-white rounded-lg p-2 shadow-xl shadow-slate-100 cursor-pointer hidden md:block">
                 <img
                     src="/src/assets/images/icons/message.svg"

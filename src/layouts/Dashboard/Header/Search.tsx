@@ -8,7 +8,7 @@ const Search = () => {
             />
             <input
                 type="text"
-                className="outline-none text-xs p-1 w-56"
+                className="outline-none text-xs p-1 w-full max-w-[224px]"
                 placeholder="Search NFTs"
             />
             <img

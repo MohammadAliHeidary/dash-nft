@@ -40,9 +40,9 @@ const Overview = () => {
                     />
                 </div>
             </div>
-            <div className="grid grid-cols-2 grid-rows-1 gap-4 w-full">
+            <div className="grid grid-cols-2 grid-rows-1 xl:grid-cols-1 xl:grid-rows-2 2xl:grid-cols-2 2xl:grid-rows-1 gap-4 w-full">
                 <div className="bg-[#f7f6f6] rounded-3xl flex flex-col items-center justify-center gap-2 px-4 py-6 cursor-pointer transition-all hover:bg-white hover:shadow">
-                    <span className="text-xs">BTC Wallet</span>
+                    <span className="text-xs text-center">BTC Wallet</span>
                     <span className="font-bold flex items-center justify-center flex-wrap gap-1">
                         4.434953
                         <span className="text-slate-400">BTC</span>
@@ -54,7 +54,7 @@ const Overview = () => {
                     />
                 </div>
                 <div className="bg-[#f7f6f6] rounded-3xl flex flex-col items-center justify-center gap-2 px-4 py-6 cursor-pointer transition-all hover:bg-white hover:shadow">
-                    <span className="text-xs">Etherume Wallet</span>
+                    <span className="text-xs text-center">Etherume Wallet</span>
                     <span className="font-bold flex items-center justify-center flex-wrap gap-1">
                         4.434953
                         <span className="text-slate-400">ETH</span>
